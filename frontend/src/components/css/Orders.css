@@ -1,0 +1,117 @@
+.orders-container {
+    margin: 0 20px 30px;
+    flex: 3;
+    max-height: calc(90vh - 60px);
+    overflow-y: auto;
+    padding-right: 5px;
+    position: relative;
+}
+
+.orders-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.orders-nav button {
+    padding: 10px 15px;
+    background: linear-gradient(to right, #606C38, #283618);
+    color: #ffffffcb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.orders-nav button:disabled {
+    background: #454e29;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.orders-nav button:hover:not(:disabled) {
+    background: linear-gradient(to right, #283618, #454e29);
+}
+
+.orders-header {
+    margin-bottom: 15px;
+    color: #333;
+    padding-left: 5px;
+}
+
+.order-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.order-card-detail {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-card-detail strong {
+    color: #454e29;
+    margin-right: 10px;
+}
+
+.order-status {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.order-status-pending {
+    background-color: #FFC300;
+    color: #333;
+}
+
+.order-status-completed {
+    background-color: #2ECC71;
+    color: white;
+}
+
+.order-status-cancelled {
+    background-color: #E74C3C;
+    color: white;
+}
+
+.cancel-order-btn {
+    padding: 8px 12px;
+    background-color: #606C38;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.cancel-order-btn:hover {
+    background-color: #283618;
+}
+
+.cancel-order-btn:disabled {
+    background-color: #454e29;
+    cursor: not-allowed;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #606C38;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    color: #283618;
+}

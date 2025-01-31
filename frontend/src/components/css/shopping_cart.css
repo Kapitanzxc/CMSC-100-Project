@@ -1,0 +1,130 @@
+.shopping-cart-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.cart-toggle-button {
+    background-color: #606C38;
+    color: white;
+    border: none;
+    width: 50px; 
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cart-toggle-button i {
+    font-size: 1.2rem; 
+}
+
+.cart-toggle-button:hover {
+    background-color: #283618; 
+    transform: scale(1.1); 
+}
+
+/* Cart's content styling */
+.cart-content {
+    background-color: white;
+    border: 1px transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    z-index: 100;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* New scrollable container for cart items */
+.cart-items-container {
+    max-height: 380px; /* Limit height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 10px; /* Add some padding for scrollbar */
+}
+
+/* Scrollbar styling for webkit browsers */
+.cart-items-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cart-items-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.cart-items-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.cart-items-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item div {
+    color: #044d19;
+    font-size: 15px;
+}
+
+.qty {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.qty button {
+    background-color: #606C38;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    padding: 5px 5px;
+    font-size: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.cart-summary {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Styling for the checkout button */
+.cart-content .cart-summary button {
+    background: linear-gradient(to right, #283618, #606C38); 
+    color: white;
+    border: none;
+    border-radius: 8px; 
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-content .cart-summary button:hover {
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, #606C38, #283618); 
+}

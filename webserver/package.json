@@ -1,0 +1,14 @@
+{
+  "name": "games-server",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^5.13.22",
+    "needle": "^3.3.1",
+    "nodemon": "^3.1.7",
+    "uuid": "^11.0.3"
+  }
+}
